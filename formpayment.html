@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://kit.fontawesome.com/ff5704e811.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div>
+            <h2>Payment form example</h2>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Some fields are missing
+          </div>
+        
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              
+                <div class="col-md-4">
+                <label for="validationTooltip01">Card #</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="XXXXXXXXXXXXXXXXXXX" value="" required>
+                </div>
+
+              <div class="col-md-4">
+                <label for="validationTooltip02">CVC #</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="0000" value="" required>
+              </div>
+
+              <div class="col-md-4">
+                <label for="amount">Amount</label>
+                <input type="text" class="form-control" id="amount" placeholder="$$$$" aria-describedby="validationTooltipUsernamePrepend" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              
+                <div class="col-md-6 mb-3">
+                <label for="validationTooltip03">First Name</label>
+                <input type="text" class="form-control" id="validationTooltip03" placeholder="first name" required>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip04">Last Name</label>
+                <input type="text" class="form-control" id="validationTooltip04" placeholder="last name" required>
+                
+              </div>
+
+              <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  
+                    <div class="col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="city" value="" required>
+                    </div>
+    
+                  <div class="col-md-2">
+                    <label for="validationTooltip02">State </label>
+                    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Pick a state
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Montana</a><br>
+                          <a class="dropdown-item" href="#">Utha</a><br>
+                          <a class="dropdown-item" href="#">Missouri</a>
+                        </div>
+                      </div>
+
+                  </div>
+    
+                  <div class="col-md-4">
+                    <label for="amount">Postal Code</label>
+                    <input type="text" class="form-control" id="amount" placeholder="Post code" aria-describedby="validationTooltipUsernamePrepend" required>
+                  </div>
+                </div>  
+
+                <div class="cards">
+                 <div class="form-row">   
+                    <div class="col-md-6">
+                        <div class ="col-sm-3">
+                        <input type="radio" name="card">
+                        <i class="fab fa-cc-visa"></i></div>
+
+                        <div class ="col-sm-3">
+                        <input type="radio" name="card">
+                        <i class="fab fa-cc-paypal"></i></div>
+
+                        <div class ="col-sm-3">
+                        <input type="radio" name="card">
+                        <i class="fab fa-cc-mastercard"></i></div>
+                        
+                        <div class ="col-sm-3"></div>
+                        <input type="radio" name="card">
+                        <i class="fab fa-cc-amex"></i></div>
+                    </div>
+
+                  <div class="col-md-6">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              
+            </div>
+            
+          </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
